@@ -1,5 +1,9 @@
 var houseList = [
     {
+        "Last": "Mr. Speaker",
+        "Party": "R"
+    },
+    {
         "Last": "Carpenter",
         "District": "1",
         "Party": "R"
