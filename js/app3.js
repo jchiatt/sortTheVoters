@@ -189,36 +189,36 @@ function cleanUnexpectedInput(input) {
   return input;
 }
 
-// function colorUnexpectedInput(input) {
-//   console.log("Inside colorUnexpectedInput()!");
-//   for (l = 0; l < input.length; l++) {
-//     console.log("Iterating through " + input[l]);
-//     for (m = 0; m < senateList.length; m++) {
-//       console.log("Iterating through " + senateList[m]);
-//       if (input[l] === senateList[m]["Last"] || input[l] === " " + senateList[m]["Last"]) {
-//         console.log("Name was found!");
-//         if (senateList[m]["Party"] === "D") {
-//           console.log("It was a Democrat!");
-//           input[l] = ' <span style="color:blue;">' + input[l] + '</span>';
-//         }
-//         else if (senateList[m]["Party"] === "R") {
-//           console.log("It was a Republican!");
-//           input[l] = ' <span style="color:red;">' + input[l] + '</span>';
-//         }
-//       }
-//     }
-//   }
-//   for (n = 0; n < input.length; n++) {
-//     for (o = 0; o < houseList.length; m++) {
-//       if (input[n] === houseList[o]["Last"] || input[n] === " " + houseList[o]["Last"]) {
-//         if (houseList[o]["Party"] === "D") {
-//           input[n] = ' <span style="color:blue;">' + input[n] + '</span>';
-//         }
-//         else if (houseList[o]["Party"] === "R") {
-//           input[n] = ' <span style="color:red;">' + input[n] + '</span>';
-//         }
-//       }
-//     }
-//   }
-//   document.getElementById('colored-results-other').innerHTML = input;
-// }
+function colorUnexpectedInput(input) {
+  console.log("Inside colorUnexpectedInput()!");
+  for (l = 0; l < input.length; l++) {
+    console.log("Iterating through " + input[l]);
+    for (m = 0; m < senateList.length; m++) {
+      console.log("Iterating through " + senateList[m]);
+      if (input[l] === senateList[m]["Last"] || input[l] === " " + senateList[m]["Last"]) {
+        console.log("Name was found!");
+        if (senateList[m]["Party"] === "D") {
+          console.log("It was a Democrat!");
+          input[l] = ' <span style="color:blue;">' + input[l] + '</span>';
+        }
+        else if (senateList[m]["Party"] === "R") {
+          console.log("It was a Republican!");
+          input[l] = ' <span style="color:red;">' + input[l] + '</span>';
+        }
+      }
+    }
+  }
+  for (n = 0; n < input.length; n++) {
+    for (o = 0; o < houseList.length; m++) {
+      if (input[n] === houseList[o]["Last"] || input[n] === " " + houseList[o]["Last"]) {
+        if (houseList[o]["Party"] === "D") {
+          input[n] = ' <span style="color:blue;">' + input[n] + '</span>';
+        }
+        else if (houseList[o]["Party"] === "R") {
+          input[n] = ' <span style="color:red;">' + input[n] + '</span>';
+        }
+      }
+    }
+  }
+  document.getElementById('colored-results-other').innerHTML = input;
+}
