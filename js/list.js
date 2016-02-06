@@ -1,6 +1,6 @@
 var houseList = [
     {
-        "Last": "Mr. Speaker",
+        "Last": "Mr.Speaker",
         "Party": "R"
     },
     {
@@ -229,6 +229,11 @@ var houseList = [
         "Party": "D"
     },
     {
+        "Last": "Evans",
+        "District": "43",
+        "Party": "D"
+    },
+    {
         "Last": "Oliver",
         "District": "46",
         "Party": "R"
@@ -394,9 +399,9 @@ var houseList = [
         "Party": "R"
     },
     {
-        "Last": "Eaton",
+        "Last": "Tullos",
         "District": "79",
-        "Party": "D"
+        "Party": "R"
     },
     {
         "Last": "Scott",
@@ -434,7 +439,7 @@ var houseList = [
         "Party": "R"
     },
     {
-        "Last": "Johnson ",
+        "Last": "Johnson",
         "District": "87",
         "Party": "R"
     },
@@ -612,7 +617,7 @@ var houseList = [
         "Last": "Baria",
         "District": "122",
         "Party": "D"
-    }
+    },
 ];
 
 var senateList = [
@@ -876,4 +881,226 @@ var senateList = [
         "District": "52",
         "Party": "R"
     }
+];
+
+var previousSenateList = [
+  {
+    "Last": "Brown",
+    "District": "17",
+    "Party": "R"
+  },
+  {
+    "Last": "Butler",
+    "District": "38",
+    "Party": "D"
+  },
+  {
+    "Last": "Collins",
+    "District":" 6",
+    "Party": "R"
+  },
+  {
+    "Last": "Gandy",
+    "District": "43",
+    "Party": "R"
+  },
+  {
+    "Last": "Hale",
+    "District": "10",
+    "Party": "D"
+  },
+  {
+    "Last": "Jones",
+    "District": "21",
+    "Party": "D"
+  },
+  {
+    "Last": "Lee",
+    "District": "35",
+    "Party": "R"
+  },
+  {
+    "Last": "Montgomery",
+    "District": "34",
+    "Party": "D"
+  },
+  {
+    "Last": "Smith",
+    "District": "47",
+    "Party": "R"
+  },
+  {
+    "Last": "Sojourner",
+    "District": "37",
+    "Party": "R"
+  },
+  {
+    "Last": "Ward",
+    "District": "18",
+    "Party": "R"
+  }
+];
+
+
+var previousHouseList = [
+  {
+    "Last": "Alday",
+    "District": "25",
+    "Party": "R"
+  },
+  {
+    "Last": "Aldridge",
+    "District": "17",
+    "Party": "R"
+  },
+  {
+    "Last": "Broomfield",
+    "District": "110",
+    "Party": "D"
+  },
+  {
+    "Last": "Brown",
+    "District": "66",
+    "Party": "D"
+  },
+  {
+    "Last": "Buck",
+    "District":" 5",
+    "Party": "D"
+  },
+  {
+    "Last": "Burnett",
+    "District":" 9",
+    "Party": "D"
+  },
+  {
+    "Last": "Coleman",
+    "District": "65",
+    "Party": "D"
+  },
+  {
+    "Last": "DeBar",
+    "District": "105",
+    "Party": "R"
+  },
+  {
+    "Last": "Dickson",
+    "District": "42",
+    "Party": "D"
+  },
+  {
+    "Last": "Eaton",
+    "District": "79",
+    "Party": "D"
+  },
+  {
+    "Last": "Espy",
+    "District": "26",
+    "Party": "D"
+  },
+  {
+    "Last": "Evans",
+    "District": "70",
+    "Party": "D"
+  },
+  {
+    "Last": "Flaggs",
+    "District": "55",
+    "Party": "D"
+  },
+  {
+    "Last": "Gardner",
+    "District": "11",
+    "Party": "D"
+  },
+  {
+    "Last": "Hamilton",
+    "District":" 6",
+    "Party": "R"
+  },
+  {
+    "Last": "Harrison",
+    "District": "41",
+    "Party": "D"
+  },
+  {
+    "Last": "Howell",
+    "District": "46",
+    "Party": "R"
+  },
+  {
+    "Last": "Jennings",
+    "District":" 7",
+    "Party": "R"
+  },
+  {
+    "Last": "Lane",
+    "District": "86",
+    "Party": "D"
+  },
+  {
+    "Last": "Lott",
+    "District": "101",
+    "Party": "R"
+  },
+  {
+    "Last": "Malone",
+    "District": "45",
+    "Party": "D"
+  },
+  {
+    "Last": "Martinson",
+    "District": "58",
+    "Party": "R"
+  },
+  {
+    "Last": "Mayo",
+    "District": "12",
+    "Party": "R"
+  },
+  {
+    "Last": "Moak",
+    "District": "53",
+    "Party": "D"
+  },
+  {
+    "Last": "Nelson",
+    "District": "40",
+    "Party": "R"
+  },
+  {
+    "Last": "Oberhousen",
+    "District": "73",
+    "Party": "D"
+  },
+  {
+    "Last": "Smith",
+    "District": "27",
+    "Party": "D"
+  },
+  {
+    "Last": "Stringer",
+    "District": "87",
+    "Party": "D"
+  },
+  {
+    "Last": "Taylor",
+    "District": "28",
+    "Party": "R"
+  },
+  {
+    "Last": "Upshaw",
+    "District": "95",
+    "Party": "R"
+  },
+  {
+    "Last": "Warren",
+    "District": "90",
+    "Party": "D"
+  },
+  {
+    "Last": "Whittington",
+    "District": "34",
+    "Party": "D"
+  }
 ];
