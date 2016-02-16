@@ -3,35 +3,57 @@ $(function(){
     var houseVoters  = $.merge(houseList, previousHouseList);
     var senateVoters = $.merge(senateList, previousSenateList);
     var voters;
+    var houseResult;
+    var senateResult;
+    var output;
 
-    $("#submitHouseBtn").on('click', function (e) {
+    $("#submitBtn").on('click', function () {
+
+        houseVotes(); 
+        senateVotes(); 
+
+        var houseCount  = houseResult.split(/(<\/b>)/).length - 1;
+        var senateCount = senateResult.split(/(<\/b>)/).length - 1;
+
+        if( houseCount > senateCount ){
+            $("#count-results").html(houseResult);
+        } else{
+            $("#count-results").html(senateResult);
+        }
+
+    });
+
+    function houseVotes()
+    {
 
         voters = [];
 
         $.each( houseVoters, function(index, val){
             voters.push(val); 
         });
-        countTheVotes();
 
-        e.preventDefault();  
+        sortVotes();
+        houseResult = output; 
+    
+    }
 
-    });
-    $("#submitSenateBtn").on('click', function (e) {
+    function senateVotes()
+    {
 
         voters = [];
 
         $.each( senateVoters, function(index, val){
             voters.push(val); 
         });
-        countTheVotes(); 
 
-        e.preventDefault();  
+        sortVotes();
+        senateResult = output; 
+    
+    } 
 
-    });
-
-    function countTheVotes()
+    function sortVotes()
     {
-        var output      = '';
+
         var input       = $("#voters").val().replace(/,|--|\.|(\r\n|\n|\r)/g, " "),
             input       = input.replace(/\s[(]/g, "("),
             input       = input.replace(/\s[A-Z]\s/g, ""),
@@ -39,8 +61,6 @@ $(function(){
             input       = input.replace(/Mr\.\s/g, "Mr.");
             
         var input_array = input.split(" ");
-
-        console.log(input_array)
 
         $.each(voters, function (i, vals) { 
             $.each(input_array, function (j, Val) { 
@@ -79,11 +99,8 @@ $(function(){
         output = output.replace(/Yeas/g, "<br><br> <b>Yeas:</b> <br>"),
         output = output.replace(/Nays/g, "<br><br> <b>Nays:</b> <br>"),
         output = output.replace(/Absent/g, "<br><br> <b>Absent</b>"),
-        output = output.replace(/DISCLAIMER/g, "<br><br> <b>DISCLAIMER</b>"); 
+        output = output.replace(/DISCLAIMER/g, "<br><br> <b>DISCLAIMER</b>");  
 
-        $("#colored-results").html(output); 
-    
-    }
-        
+    }    
 
 });
