@@ -149,6 +149,11 @@ var houseList = [
         "Party": "D"
     },
     {
+        "Last": "Hudson",
+        "District": "29",
+        "Party": "D"
+    },
+    {
         "Last": "Huddleston",
         "District": "30",
         "Party": "D"
@@ -369,6 +374,11 @@ var houseList = [
         "Party": "D"
     },
     {
+        "Last": "Gibbs",
+        "District": "72",
+        "Party": "D"
+    },
+    {
         "Last": "Wilson",
         "District": "73",
         "Party": "R"
@@ -454,6 +464,11 @@ var houseList = [
         "Party": "R"
     },
     {
+        "Last": "Scoggin",
+        "District": "89",
+        "Party": "R"
+    },
+    {
         "Last": "Sanford",
         "District": "90",
         "Party": "R"
@@ -535,6 +550,11 @@ var houseList = [
     },
     {
         "Last": "Frierson",
+        "District": "106",
+        "Party": "R"
+    },
+    {
+        "Last": "Corley",
         "District": "106",
         "Party": "R"
     },
