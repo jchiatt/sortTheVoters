@@ -154,12 +154,12 @@ var houseList = [
         "Party": "D"
     },
     {
-        "Last": "Huddleston",
+        "Last": "Rosebud",
         "District": "30",
         "Party": "D"
     },
     {
-        "Last": "Thomas",
+        "Last": "Anthony",
         "District": "31",
         "Party": "D"
     },
@@ -309,7 +309,7 @@ var houseList = [
         "Party": "R"
     },
     {
-        "Last": "Moore",
+        "Last": "Shanks",
         "District": "60",
         "Party": "R"
     },
@@ -399,7 +399,7 @@ var houseList = [
         "Party": "D"
     },
     {
-        "Last": "Gipson",
+        "Last": "Wallace",
         "District": "77",
         "Party": "R"
     },
@@ -439,7 +439,7 @@ var houseList = [
         "Party": "R"
     },
     {
-        "Last": "Middleton",
+        "Last": "Harness",
         "District": "85",
         "Party": "D"
     },
