@@ -717,7 +717,7 @@ var senateList = [
         "Party": "R"
     },
     {
-        "Last": "Turner",
+        "Last": "Turner-Ford",
         "District": "16",
         "Party": "D"
     },
