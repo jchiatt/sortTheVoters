@@ -176,7 +176,7 @@ const houseList = [
   {
     Last: 'Horan',
     District: '34',
-    Party: 'D',
+    Party: 'R',
   },
   {
     Last: 'Hood',
