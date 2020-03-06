@@ -49,7 +49,7 @@ const houseList = [
     Party: 'D',
   },
   {
-    Last: 'Mettetal',
+    Last: 'Williamson',
     District: '10',
     Party: 'R',
   },
@@ -59,9 +59,9 @@ const houseList = [
     Party: 'D',
   },
   {
-    Last: 'Hughes',
+    Last: 'Deweese',
     District: '12',
-    Party: 'D',
+    Party: 'R',
   },
   {
     Last: 'Massengill',
@@ -69,7 +69,7 @@ const houseList = [
     Party: 'R',
   },
   {
-    Last: 'Rogers',
+    Last: 'Creekmore IV',
     District: '14',
     Party: 'R',
   },
@@ -79,7 +79,7 @@ const houseList = [
     Party: 'R',
   },
   {
-    Last: 'Holland',
+    Last: 'Thompson',
     District: '16',
     Party: 'D',
   },
@@ -109,7 +109,7 @@ const houseList = [
     Party: 'R',
   },
   {
-    Last: 'Sullivan',
+    Last: 'Lancaster',
     District: '22',
     Party: 'D',
   },
@@ -139,7 +139,7 @@ const houseList = [
     Party: 'D',
   },
   {
-    Last: 'Foster',
+    Last: 'Darnell',
     District: '28',
     Party: 'R',
   },
@@ -164,7 +164,7 @@ const houseList = [
     Party: 'D',
   },
   {
-    Last: 'Perkins',
+    Last: 'Osborne',
     District: '32',
     Party: 'D',
   },
@@ -199,14 +199,14 @@ const houseList = [
     Party: 'D',
   },
   {
-    Last: 'Smith',
+    Last: 'McLean',
     District: '39',
     Party: 'R',
   },
   {
-    Last: 'Henley',
+    Last: 'McCray',
     District: '40',
-    Party: 'R',
+    Party: 'D',
   },
   {
     Last: 'Karriem',
@@ -314,7 +314,7 @@ const houseList = [
     Party: 'R',
   },
   {
-    Last: 'Rogers',
+    Last: 'Newman',
     District: '61',
     Party: 'R',
   },
@@ -324,14 +324,14 @@ const houseList = [
     Party: 'R',
   },
   {
-    Last: 'Dixon',
+    Last: 'Foster',
     District: '63',
     Party: 'D',
   },
   {
-    Last: 'Denny',
+    Last: 'Yates',
     District: '64',
-    Party: 'R',
+    Party: 'D',
   },
   {
     Last: 'Bell',
@@ -349,7 +349,7 @@ const houseList = [
     Party: 'D',
   },
   {
-    Last: 'Calhoun',
+    Last: 'Summers',
     District: '68',
     Party: 'D',
   },
@@ -359,12 +359,12 @@ const houseList = [
     Party: 'D',
   },
   {
-    Last: 'Sykes',
+    Last: 'Brown',
     District: '70',
     Party: 'D',
   },
   {
-    Last: 'Wooten',
+    Last: 'Crudup',
     District: '71',
     Party: 'D',
   },
@@ -379,12 +379,12 @@ const houseList = [
     Party: 'D',
   },
   {
-    Last: 'Wilson',
+    Last: 'Ford',
     District: '73',
     Party: 'R',
   },
   {
-    Last: 'Baker',
+    Last: 'Yancey',
     District: '74',
     Party: 'R',
   },
@@ -429,7 +429,7 @@ const houseList = [
     Party: 'D',
   },
   {
-    Last: 'Snowden',
+    Last: 'Calvert',
     District: '83',
     Party: 'R',
   },
@@ -449,7 +449,7 @@ const houseList = [
     Party: 'R',
   },
   {
-    Last: 'Johnson',
+    Last: 'Andrews',
     District: '87',
     Party: 'R',
   },
@@ -494,7 +494,7 @@ const houseList = [
     Party: 'D',
   },
   {
-    Last: 'Willis',
+    Last: 'McKnight',
     District: '95',
     Party: 'R',
   },
@@ -509,7 +509,7 @@ const houseList = [
     Party: 'R',
   },
   {
-    Last: 'Myers',
+    Last: 'Porter',
     District: '98',
     Party: 'D',
   },
@@ -524,7 +524,7 @@ const houseList = [
     Party: 'R',
   },
   {
-    Last: 'Touchstone',
+    Last: 'McCarty',
     District: '101',
     Party: 'R',
   },
@@ -544,7 +544,7 @@ const houseList = [
     Party: 'R',
   },
   {
-    Last: 'McNeal',
+    Last: 'Goodin',
     District: '105',
     Party: 'R',
   },
@@ -554,7 +554,7 @@ const houseList = [
     Party: 'R',
   },
   {
-    Last: 'Corley',
+    Last: 'Owen',
     District: '106',
     Party: 'R',
   },
@@ -564,7 +564,7 @@ const houseList = [
     Party: 'R',
   },
   {
-    Last: 'Wilkes',
+    Last: 'Hobgood-Wilkes',
     District: '108',
     Party: 'R',
   },
@@ -609,7 +609,7 @@ const houseList = [
     Party: 'R',
   },
   {
-    Last: 'DeLano',
+    Last: 'Felsher',
     District: '117',
     Party: 'R',
   },
@@ -619,7 +619,7 @@ const houseList = [
     Party: 'R',
   },
   {
-    Last: 'Williams-Barnes',
+    Last: 'WilliamsBarnes',
     District: '119',
     Party: 'D',
   },
@@ -634,9 +634,9 @@ const houseList = [
     Party: 'R',
   },
   {
-    Last: 'Baria',
+    Last: 'Anderson',
     District: '122',
-    Party: 'D',
+    Party: 'R',
   },
 ];
 

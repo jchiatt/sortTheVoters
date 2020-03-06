@@ -1,106 +1,84 @@
-$(function(){
- 
-    var houseVoters  = $.merge(houseList, previousHouseList);
-    var senateVoters = $.merge(senateList, previousSenateList);
-    var voters;
-    var houseResult;
-    var senateResult;
-    var output;
+$(function() {
+  const houseVoters = $.merge(houseList, previousHouseList);
+  const senateVoters = $.merge(senateList, previousSenateList);
+  let voters;
+  let houseResult;
+  let senateResult;
+  let output;
 
-    $("#submitBtn").on('click', function () {
+  $('#submitBtn').on('click', function() {
+    houseVotes();
+    senateVotes();
 
-        houseVotes(); 
-        senateVotes(); 
+    const houseCount = houseResult.split(/(<\/b>)/).length - 1;
+    const senateCount = senateResult.split(/(<\/b>)/).length - 1;
 
-        var houseCount  = houseResult.split(/(<\/b>)/).length - 1;
-        var senateCount = senateResult.split(/(<\/b>)/).length - 1;
+    if (houseCount > senateCount) {
+      $('#count-results').html(houseResult);
+    } else {
+      $('#count-results').html(senateResult);
+    }
+  });
 
-        if( houseCount > senateCount ){
-            $("#count-results").html(houseResult);
-        } else{
-            $("#count-results").html(senateResult);
-        }
+  function houseVotes() {
+    voters = [];
 
+    $.each(houseVoters, function(index, val) {
+      voters.push(val);
     });
 
-    function houseVotes()
-    {
+    sortVotes();
+    houseResult = output;
+  }
 
-        voters = [];
+  function senateVotes() {
+    voters = [];
 
-        $.each( houseVoters, function(index, val){
-            voters.push(val); 
-        });
+    $.each(senateVoters, function(index, val) {
+      voters.push(val);
+    });
 
-        sortVotes();
-        houseResult = output; 
-    
-    }
+    sortVotes();
+    senateResult = output;
+  }
 
-    function senateVotes()
-    {
+  function sortVotes() {
+    var input = $('#voters')
+      .val()
+      .replace(/,|--|\.|(\r\n|\n|\r)/g, ' ');
+    var input = input.replace(/\s[(]/g, '(');
+    var input = input.replace(/\s[A-Z]\s/g, '');
+    var input = input.replace(/Mr\s/g, 'Mr.');
+    var input = input.replace(/Mr\.\s/g, 'Mr.');
 
-        voters = [];
+    const input_array = input.split(' ');
 
-        $.each( senateVoters, function(index, val){
-            voters.push(val); 
-        });
+    $.each(voters, function(i, vals) {
+      $.each(input_array, function(j, Val) {
+        if (input_array[j].indexOf('(') > 0) {
+          if (Val.match(vals.District) && Val.match(vals.Last)) {
+            if (vals.Party == 'R') {
+              input_array[j] = `<b style='color:red;'>${Val},` + `</b>`;
+            } else {
+              input_array[j] = `<b style='color:blue;'>${Val},` + `</b>`;
+            }
+          }
+        } else if (Val == vals.Last) {
+          if (vals.Party == 'R') {
+            input_array[j] = `<b style='color:red;'>${Val},` + `</b>`;
+          } else {
+            input_array[j] = `<b style='color:blue;'>${Val},` + `</b>`;
+          }
+        }
+      });
+    });
 
-        sortVotes();
-        senateResult = output; 
-    
-    } 
-
-    function sortVotes()
-    {
-
-        var input       = $("#voters").val().replace(/,|--|\.|(\r\n|\n|\r)/g, " "),
-            input       = input.replace(/\s[(]/g, "("),
-            input       = input.replace(/\s[A-Z]\s/g, ""),
-            input       = input.replace(/Mr\s/g, "Mr."),
-            input       = input.replace(/Mr\.\s/g, "Mr.");
-            
-        var input_array = input.split(" ");
-
-        $.each(voters, function (i, vals) { 
-            $.each(input_array, function (j, Val) { 
-
-                if( input_array[j].indexOf('(') > 0 ) { 
-
-                    if( Val.match(vals.District) && Val.match(vals.Last) ) {
-
-                        if( vals.Party == 'R' ){
-                            input_array[j] = "<b style='color:red;'>" + Val + ',' + "</b>";       
-                        } else {
-                            input_array[j] = "<b style='color:blue;'>" + Val + ',' + "</b>";       
-                        }
-
-                    }
-
-                } else{ 
-
-                    if( Val == vals.Last ) {
-
-                        if( vals.Party == 'R' ){
-                            input_array[j] = "<b style='color:red;'>" + Val + ',' + "</b>";                        
-                        } else {
-                            input_array[j] = "<b style='color:blue;'>" + Val + ',' + "</b>";                      
-                        }
-
-                    }
-                }
-   
-            });
-        });
-
-        output = input_array.join(" "),
-        output = output.replace(/[(]/g, " ("),
-        output = output.replace(/Mr\./g, "Mr. "),
-        output = output.replace(/Yeas/g, "<br><br> <b>Yeas:</b> <br>"),
-        output = output.replace(/Nays/g, "<br><br> <b>Nays:</b> <br>"),
-        output = output.replace(/Absent/g, "<br><br> <b>Absent</b>"),
-        output = output.replace(/DISCLAIMER/g, "<br><br> <b>DISCLAIMER</b>");  
-
-    }    
-
+    (output = input_array.join(' ')),
+      (output = output.replace(/[(]/g, ' (')),
+      (output = output.replace(/Mr\./g, 'Mr. ')),
+      (output = output.replace(/Yeas/g, '<br><br> <b>Yeas:</b> <br>')),
+      (output = output.replace(/Nays/g, '<br><br> <b>Nays:</b> <br>')),
+      (output = output.replace(/Absent/g, '<br><br> <b>Absent</b>')),
+      (output = output.replace(/DISCLAIMER/g, '<br><br> <b>DISCLAIMER</b>'));
+  }
 });
