@@ -434,7 +434,7 @@ const houseList = [
     Party: 'R',
   },
   {
-    Last: 'Shirley',
+    Last: 'Smith',
     District: '84',
     Party: 'R',
   },
