@@ -51,7 +51,16 @@ $(function() {
     var input = input.replace(/Mr\s/g, 'Mr.');
     var input = input.replace(/Mr\.\s/g, 'Mr.');
 
-    const input_array = input.split(' ');
+    const SUFFIXES = ['Sr.', 'Jr.', 'II', 'III', 'IV'];
+
+    let input_array = input.split(' ');
+
+    for (let i = 0; i < input_array.length; i++) {
+      if (SUFFIXES.indexOf(input_array[i]) !== -1) {
+        input_array[i - 1] = `${input_array[i - 1]} ${input_array[i]}`;
+        input_array.splice(i, 1);
+      }
+    }
 
     $.each(voters, function(i, vals) {
       $.each(input_array, function(j, Val) {
