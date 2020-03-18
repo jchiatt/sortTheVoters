@@ -619,7 +619,7 @@ const houseList = [
     Party: 'R',
   },
   {
-    Last: 'WilliamsBarnes',
+    Last: 'Williams-Barnes',
     District: '119',
     Party: 'D',
   },
@@ -641,6 +641,81 @@ const houseList = [
 ];
 
 const senateList = [
+  {
+    Last: 'Boyd',
+    District: '0',
+    Party: 'R',
+  },
+  {
+    Last: 'Carter',
+    District: '0',
+    Party: 'R',
+  },
+  {
+    Last: 'Chism',
+    District: '0',
+    Party: 'R',
+  },
+  {
+    Last: 'DeLano',
+    District: '0',
+    Party: 'R',
+  },
+  {
+    Last: 'Johnson',
+    District: '0',
+    Party: 'R',
+  },
+  {
+    Last: 'McCaughn',
+    District: '0',
+    Party: 'R',
+  },
+  {
+    Last: 'McLendon',
+    District: '0',
+    Party: 'R',
+  },
+  {
+    Last: 'Michel',
+    District: '0',
+    Party: 'R',
+  },
+  {
+    Last: 'Sparks',
+    District: '0',
+    Party: 'R',
+  },
+  {
+    Last: 'Suber',
+    District: '0',
+    Party: 'R',
+  },
+  {
+    Last: 'Thompson',
+    District: '0',
+    Party: 'R',
+  },
+  {
+    Last: 'Whaley',
+    District: '0',
+    Party: 'R',
+  },
+  {
+    Last: 'England',
+    District: '0',
+    Party: 'R',
+  },
+  {
+    Last: 'Tate',
+    District: '0',
+    Party: 'R',
+  },
+  {
+    Last: 'Thomas',
+    District: '0',
+    Party: 'D',
+  },
   {
     Last: 'Massey',
     District: '1',
